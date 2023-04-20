@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+    <file>
+        <body>
+            <trans-unit id="tl_module.text_legend">
+                <target>Text</target>
+            </trans-unit>
+            <trans-unit id="tl_module.imageMargin.0">
+                <target>Bildabstand</target>
+            </trans-unit>
+            <trans-unit id="tl_module.imageMargin.1">
+                <target>Hier können Sie den oberen, rechten, unteren und linken Außenabstand eingeben.</target>
+            </trans-unit>
+            <trans-unit id="tl_module.overwriteMeta.0">
+                <target>Metadaten überschreiben</target>
+            </trans-unit>
+            <trans-unit id="tl_module.overwriteMeta.1">
+                <target>Die Metadaten aus der Dateiverwaltung überschreiben.</target>
+            </trans-unit>
+            <trans-unit id="tl_module.alt.0">
+                <target>Alternativer Text</target>
+            </trans-unit>
+            <trans-unit id="tl_module.alt.1">
+                <target>Hier können Sie einen alternativen Text für das Bild eingeben (&lt;em&gt;alt&lt;/em&gt;-Attribut).</target>
+            </trans-unit>
+            <trans-unit id="tl_module.imageTitle.0">
+                <target>Bildtitel</target>
+            </trans-unit>
+            <trans-unit id="tl_module.imageTitle.1">
+                <target>Hier können Sie den Titel des Bildes eingeben (&lt;em&gt;title&lt;/em&gt;-Attribut).</target>
+            </trans-unit>
+            <trans-unit id="tl_module.imageUrl.0">
+                <target>Bildlink-Adresse</target>
+            </trans-unit>
+            <trans-unit id="tl_module.imageUrl.1">
+                <target>Eine eigene Bildlink-Adresse überschreibt den Lightbox-Link, sodass das Bild nicht mehr in der Großansicht dargestellt werden kann.</target>
+            </trans-unit>
+            <trans-unit id="tl_module.caption.0">
+                <target>Bildunterschrift</target>
+            </trans-unit>
+            <trans-unit id="tl_module.caption.1">
+                <target>Hier können Sie einen kurzen Text eingeben, der unterhalb des Bildes angezeigt wird.</target>
+            </trans-unit>
+            <trans-unit id="tl_module.noSearch.0">
+                <target>Nicht durchsuchen</target>
+            </trans-unit>
+            <trans-unit id="tl_module.noSearch.1">
+                <target>Dieses Modul nicht in den Suchindex aufnehmen.</target>
+            </trans-unit>
+            <trans-unit id="tl_module.text.0">
+                <target>Text</target>
+            </trans-unit>
+            <trans-unit id="tl_module.text.1">
+                <target>Sie können HTML-Tags verwenden, um den Text zu formatieren</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

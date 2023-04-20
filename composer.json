@@ -1,0 +1,88 @@
+{
+  "name": "xx81/contao-more-frontend-modules-bundle",
+  "description": "Provides some simple but maybe usefully frontend modules for Contao CMS.",
+  "keywords": [
+    "contao",
+    "extension",
+    "frontend",
+    "modules"
+  ],
+  "minimum-stability": "dev",
+  "license": "LGPL-3.0-or-later",
+  "type": "contao-bundle",
+  "authors": [
+    {
+      "name": "Benjamin Geiger",
+      "homepage": "https://github.com/xx81",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/xx81/contao-more-frontend-modules",
+  "support": {
+    "issues": "https://github.com/xx81/contao-more-frontend-modules/issues",
+    "source": "https://github.com/xx81/contao-more-frontend-modules"
+  },
+  "require": {
+    "php": "^8.1",
+    "contao/core-bundle": "^4.13",
+    "symfony/config": "^5.4",
+    "symfony/dependency-injection": "^5.4",
+    "symfony/http-kernel": "^5.4"
+  },
+  "require-dev": {
+    "bamarni/composer-bin-plugin": "^1.5",
+    "contao/manager-plugin": "^2.0",
+    "phpunit/phpunit": "^9.5",
+    "symfony/phpunit-bridge": "^6.1",
+    "contao/easy-coding-standard": "^5.4",
+    "contao/test-case": "^5.1"
+  },
+  "conflict": {
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Xx81\\Contao\\MoreFrontendModulesBundle\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config",
+      "src/Resources/contao/dca",
+      "src/Resources/contao/languages",
+      "src/Resources/contao/templates"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Xx81\\Contao\\MoreFrontendModulesBundle\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "bamarni/composer-bin-plugin": true,
+      "contao-components/installer": true,
+      "contao/manager-plugin": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "php-http/discovery": false
+    }
+  },
+  "extra": {
+    "bamarni-bin": {
+      "bin-links": false,
+      "target-directory": "tools"
+    },
+    "contao-manager-plugin": "Xx81\\Contao\\MoreFrontendModulesBundle\\ContaoManager\\Plugin"
+  },
+  "scripts": {
+    "all": [
+      "@unit-tests",
+      "@ecs",
+      "@phpstan"
+    ],
+    "ecs": "@php tools/ecs/vendor/bin/ecs check src tests --config ecs.php --fix --ansi",
+    "phpstan": "@php tools/phpstan/vendor/bin/phpstan analyze --ansi",
+    "unit-tests": "@php vendor/bin/phpunit --colors=always"
+  }
+}

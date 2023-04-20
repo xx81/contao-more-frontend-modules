@@ -1,0 +1,16 @@
+services:
+    _defaults:
+        autoconfigure: true
+
+    # Event-Listener für DataContainer
+    Xx81\Contao\MoreFrontendModulesBundle\EventListener\DataContainer\:
+        resource: '../../EventListener/DataContainer/'
+        tags: [ 'contao_service_annotation' ]
+        arguments:
+            - '@request_stack'
+
+    # Modules
+    Xx81\Contao\MoreFrontendModulesBundle\Controller\:
+        resource: '../../Controller/'
+        tags: [ 'terminal42_service_annotation' ]
+        public: true

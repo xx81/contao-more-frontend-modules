@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+    <file>
+        <body>
+            <trans-unit id="FMD.moreFrontendModules">
+                <target>More Frontend Modules</target>
+            </trans-unit>
+            <trans-unit id="FMD.mfmimage.0">
+                <target>Image</target>
+            </trans-unit>
+            <trans-unit id="FMD.mfmimage.1">
+                <target>Inserts an image as the frontend module.</target>
+            </trans-unit>
+            <trans-unit id="FMD.mfmtext.0">
+                <target>Text</target>
+            </trans-unit>
+            <trans-unit id="FMD.mfmtext.1">
+                <target>Inserts a text as the frontend module.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

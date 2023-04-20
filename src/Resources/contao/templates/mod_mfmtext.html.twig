@@ -1,0 +1,5 @@
+{% extends noSearch == 'true' ? '@Contao/block_unsearchable' : '@Contao/block_searchable' %}
+
+{% block content %}
+{{ text | raw }}
+{% endblock %}

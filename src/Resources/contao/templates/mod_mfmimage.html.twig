@@ -1,0 +1,7 @@
+{% extends noSearch == 'true' ? '@Contao/block_unsearchable' : '@Contao/block_searchable' %}
+
+{% block content %}
+{% if figure != null %}
+{% include '@ContaoCore/Image/Studio/figure.html.twig' %}
+{% endif %}
+{% endblock %}

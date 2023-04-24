@@ -22,6 +22,22 @@ Inserts a text element using the Wysiwyg editor of Contao CMS.
 
 Here you can use the functions of the TinyMCE (Wysiwyg-Editor) of Contao CMS to set for example a text/link/list etc. comfortably via an editor. Then you can insert the whole thing as a module in the page layout or as a content element (module) in the page and maintain centrally.
 
+### Module Envelope-Begin / Module Envelope-End
+
+Inserts the Beginning/the End of an Envelope-Element, which operates like a wrapper.
+
+This can be used to group elements together (e.g. to use the elements in a row of grid-system).
+You can select from different HTML tags like *div*, *span*, *p*, *ul* .
+
+#### Example: Output with DIV tag
+
+````
+<div class="mod_mfmenvbegin row">
+    <div class="col-md-4">(...)</div>
+    <div class="col-md-8">(...)</div>
+</div>
+````
+
 ## More information
 
 * Sourcecode: [https://github.com/xx81/contao-more-frontend-modules](https://github.com/xx81/contao-more-frontend-modules)

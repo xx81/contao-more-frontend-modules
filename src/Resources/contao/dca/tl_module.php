@@ -12,6 +12,8 @@ declare(strict_types=1);
 
 $GLOBALS['TL_DCA']['tl_module']['palettes']['mfmimage'] = '{title_legend},name,type;{source_legend},singleSRC,imgSize,imageMargin,fullsize,overwriteMeta;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,noSearch';
 $GLOBALS['TL_DCA']['tl_module']['palettes']['mfmtext'] = '{title_legend},name,type;{text_legend},text;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,noSearch';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['mfmenvbeg'] = '{title_legend},name,type;{config_legend},htmlTag,{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['mfmenvend'] = '{title_legend},name,type;{config_legend},htmlTag,{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests';
 $GLOBALS['TL_DCA']['tl_module']['palettes']['__selector__'][] = 'overwriteMeta';
 $GLOBALS['TL_DCA']['tl_module']['subpalettes']['overwriteMeta'] = 'alt,imageTitle,imageUrl,caption';
 
@@ -101,4 +103,12 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['noSearch'] = [
     'inputType' => 'checkbox',
     'eval' => ['tl_class' => 'clr w50'],
     'sql' => "char(1) NOT NULL default ''",
+];
+$GLOBALS['TL_DCA']['tl_module']['fields']['htmlTag'] = [
+    'exclude' => true,
+    'filter' => true,
+    'inputType' => 'select',
+    'options' => ['div', 'span', 'p', 'ul'],
+    'eval' => ['tl_class' => 'clr w50'],
+    'sql' => ['type' => 'string', 'length' => 32, 'default' => ''],
 ];

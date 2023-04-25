@@ -17,6 +17,18 @@
             <trans-unit id="FMD.mfmtext.1">
                 <target>Fügt ein Text als Frontend-Modul ein.</target>
             </trans-unit>
+            <trans-unit id="FMD.mfmenvbeg.0">
+                <target>Element-Umschlag - Anfang</target>
+            </trans-unit>
+            <trans-unit id="FMD.mfmenvbeg.1">
+                <target>Fügt den Anfang eines Umschlag-Elements ein, um mehrere Elemente zu gruppieren (z.B. für die Deklaration einer Reihe in einem Grid-System).</target>
+            </trans-unit>
+            <trans-unit id="FMD.mfmenvend.0">
+                <target>Element-Umschlag - Ende</target>
+            </trans-unit>
+            <trans-unit id="FMD.mfmenvend.1">
+                <target>Fügt das Ende eines Umschlag-Elements ein, mit dem mehrere Elemente gruppiert werden.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

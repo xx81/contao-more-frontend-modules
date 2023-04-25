@@ -17,6 +17,18 @@
             <trans-unit id="FMD.mfmtext.1">
                 <target>Inserts a text as the frontend module.</target>
             </trans-unit>
+            <trans-unit id="FMD.mfmenvbeg.0">
+                <target>Envelope element - Start</target>
+            </trans-unit>
+            <trans-unit id="FMD.mfmenvbeg.1">
+                <target>Inserts the beginning of an envelope element to group multiple elements (e.g. for declaring a row in a grid system).</target>
+            </trans-unit>
+            <trans-unit id="FMD.mfmenvend.0">
+                <target>Envelope element - End</target>
+            </trans-unit>
+            <trans-unit id="FMD.mfmenvend.1">
+                <target>Inserts the end of an envelope element used to group multiple elements.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

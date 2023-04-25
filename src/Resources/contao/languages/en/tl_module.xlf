@@ -53,6 +53,12 @@
             <trans-unit id="tl_module.text.1">
                 <target>You can use HTML tags to format the text.</target>
             </trans-unit>
+            <trans-unit id="tl_module.htmlTag.0">
+                <target>HTML tag</target>
+            </trans-unit>
+            <trans-unit id="tl_module.htmlTag.1">
+                <target>Select the HTML tag to be used for the element.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

@@ -1,6 +1,11 @@
 services:
     _defaults:
         autoconfigure: true
+        autowire: true
+
+    Xx81\Contao\MoreFrontendModulesBundle\:
+        resource: '../src/'
+        exclude: '../src/{DependencyInjection,Session,Config,Model,Event}'
 
     # Event-Listener für DataContainer
     Xx81\Contao\MoreFrontendModulesBundle\EventListener\DataContainer\:

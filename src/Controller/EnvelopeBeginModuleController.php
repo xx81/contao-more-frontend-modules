@@ -30,8 +30,8 @@ class EnvelopeBeginModuleController extends AbstractFrontendModuleController
     {
         $template->cssID = '';
 
-        if (is_array($cssID = unserialize($model->cssID)) && $cssID[0] != '') {
-            $template->cssID = ' id="' . $cssID[0] . '"';
+        if (\is_array($cssID = unserialize($model->cssID)) && '' !== $cssID[0]) {
+            $template->cssID = ' id="'.$cssID[0].'"';
         }
 
         return $template->getResponse();

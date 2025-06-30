@@ -13,15 +13,13 @@ declare(strict_types=1);
 namespace Xx81\Contao\MoreFrontendModulesBundle\Controller;
 
 use Contao\CoreBundle\Controller\FrontendModule\AbstractFrontendModuleController;
-use Contao\CoreBundle\ServiceAnnotation\FrontendModule;
+use Contao\CoreBundle\DependencyInjection\Attribute\AsFrontendModule;
 use Contao\ModuleModel;
 use Contao\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-/**
- * @FrontendModule(category="moreFrontendModules",type="mfmenvbeg")
- */
+#[AsFrontendModule(type: "mfmenvbeg", category: "moreFrontendModules", template: "mod_mfmenvbeg.html.twig")]
 class EnvelopeBeginModuleController extends AbstractFrontendModuleController
 {
     public const TYPE = 'mfmenvbeg';

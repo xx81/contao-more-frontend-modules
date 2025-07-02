@@ -22,7 +22,7 @@ use Contao\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-#[AsFrontendModule(type: "mfmimage", category: "moreFrontendModules", template: "mod_mfmimage.html.twig")]
+#[AsFrontendModule(type: "mfmimage", category: "moreFrontendModules", template: "mod_mfmimage")]
 class ImageModuleController extends AbstractFrontendModuleController
 {
     public const TYPE = 'mfmimage';
@@ -35,7 +35,7 @@ class ImageModuleController extends AbstractFrontendModuleController
             ->from($model->singleSRC)
             ->setSize($model->imgSize)
             ->setMetadata($this->getOverwriteMetadata($model))
-            ->enableLightbox($model->fullsize)
+            ->enableLightbox($model->fullsize != '' ? true : false)
             ->buildIfResourceExists()
         ;
 

@@ -5,7 +5,7 @@ and brings additional frontend modules.
 
 ## Requirements
 
-* Contao CMS in Version 4.13 and newer
+* Contao CMS in Version 5.3 and newer
 * PHP 8.1 and newer
 
 ## Modules

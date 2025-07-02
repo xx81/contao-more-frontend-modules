@@ -19,7 +19,7 @@ use Contao\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-#[AsFrontendModule(type: "mfmtext", category: "moreFrontendModules", template: "mod_mfmtext.html.twig")]
+#[AsFrontendModule(type: "mfmtext", category: "moreFrontendModules", template: "mod_mfmtext")]
 class TextModuleController extends AbstractFrontendModuleController
 {
     public const TYPE = 'mfmtext';

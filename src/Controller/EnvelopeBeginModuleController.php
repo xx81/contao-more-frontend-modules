@@ -19,7 +19,7 @@ use Contao\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-#[AsFrontendModule(type: "mfmenvbeg", category: "moreFrontendModules", template: "mod_mfmenvbeg.html.twig")]
+#[AsFrontendModule(type: "mfmenvbeg", category: "moreFrontendModules", template: "mod_mfmenvbeg")]
 class EnvelopeBeginModuleController extends AbstractFrontendModuleController
 {
     public const TYPE = 'mfmenvbeg';
